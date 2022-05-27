@@ -1,0 +1,164 @@
+h5{
+    margin: 0 auto 0 auto;
+    font-size: 1rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.rozliczNaglowek{
+    font-size: 0.8rem;
+}
+.wystawcaKolA {
+    text-align: left;
+    width: 30%;
+}
+.wystawcaKolB {
+    text-align: left;
+    width: 10%;
+}
+.wystawcaKolC {
+    text-align: left;
+    width: auto;
+}
+.wystawcaKolD {
+    text-align: right;
+    width: 20%;
+}
+.wystawcaKolE {
+    text-align: left;
+    width: 25%;
+}
+.tabzestawkosztow{
+    font-size: 0.8rem;
+}
+.tabzestawkosztowSzcz{
+    font-size: 0.8rem;
+}
+.zestawKolAA{
+    width: 70%;
+}
+.zestawKolAB{
+    width: auto;
+}
+.zestawKolAC{
+    width: 25%;
+    text-align: right;
+}
+.zestawR{
+    text-align: right;
+}
+.podsuma{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.tabelaprosta {
+    margin-top: 5rem;
+}
+
+.tabelaprosta th {
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tabelaprosta td {
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+.tabelaprostaNag {
+    border-top:  0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+}
+
+.rozliczKolA {
+    text-align: left;
+    font-weight: bold;
+    width: auto;
+}
+
+.rozliczKolB {
+    text-align: center;
+    width: 10%;
+}
+
+.rozliczKolC {
+    text-align: right;
+    width: 8%;
+
+}
+
+.rozliczKolD {
+    text-align: center;
+    width: 20%;
+}
+
+.rozliczKolE {
+    text-align: right;
+    width: 10%;
+}
+
+.rozliczKolF {
+    text-align: right;
+    width: 8%;
+}
+
+.zestnag{
+    padding-top: 6px;
+    text-align: left;
+}
+
+.tpodsuma{
+    margin: 0 5rem 0 auto;
+}
+
+.podsuma{
+    font-weight: bold;
+}
+
+.ramka{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tabNagDoLewej{
+    width: 25%;
+}
+
+.tf {
+    height: 4rem;
+    padding: 1rem 0 0 0;
+    text-align: right;
+    font-weight: bold;
+}
+
+#previewpodpis{
+    width: auto;
+    height: auto;
+	margin: 1rem 2rem 5rem auto;
+	float: right;
+}
+
+.zmianapodz {
+    color: white;
+    background-color: black;
+}
+
+.rozliczuwaga{
+    font-size: 0.8rem;
+}
+
+#previewpodpis{
+    width: 5cm;
+}

@@ -1,0 +1,137 @@
+@page {
+	size: A4 landscape;
+}
+div {
+  font-size: small;
+}
+h3, h4 {
+    font-size: 1rem;
+    margin: 0 auto 0 auto;
+    padding: 0 auto 0 auto;
+}
+table {
+    width: 100%;
+    font-weight: normal;
+    font-size: smaller
+}
+.rowgora{
+    border-top: 1px solid black;
+}
+
+.rowdol{
+   border-bottom: 1px solid black;
+}
+.grub{
+    font-weight: bold;
+}
+.roz-col-A{
+  width: 15%;
+}
+.roz-col-B{
+ width: 8%;
+}
+.roz-col-CL{
+ text-align: left;
+}
+.roz-col-CR{
+  width: 8%;
+  text-align: right;
+ }
+.roz-col-D{
+ width: 8%;
+ text-align: right;
+}
+.roz-col-E{
+  width: 10%;
+  text-align: right;
+}
+.roz-col-F{
+  width: 8%;
+  text-align: right;
+}
+.roz-col-G{
+  width: 10%;
+  text-align: right;
+}
+.roz-col-H{
+  width: 20%;
+  text-align: right;
+}
+.roz-col-HH{
+  padding-right: 0.5rem;
+  width: 20%;
+  text-align: right;
+}
+.roz-col-I{
+  width: 15%;
+  text-align: right;
+}
+.roz-col-J{
+  width: 20%;
+  text-align: right;
+}
+.roz-col-3{
+  width: 40%;
+}
+.roz-col-4{
+   width: 25%
+}
+.roz-col-7{
+  width: auto;
+  padding-left: 1rem;
+}
+.roz-col-fin{
+  font-weight: bold;
+  text-align: right;
+}
+.roz-col-tfin{
+  font-weight: normal;
+  text-align: right;
+}
+.roz-fod-A{
+  width: 15%;
+}
+.roz-fod-B{
+  width: 40%;
+}
+.roz-fod-C{
+  width: 5%;
+  text-align: right;
+}
+.roz-fod-D{
+  width: 7%;
+  text-align: right;
+}
+.roz-fod-E{
+  width: 7.5%;
+  text-align: right;
+}
+.roz-fod-F{
+  width: 9%;
+  text-align: right;
+}
+.roz-fod-G{
+  width: 6%;
+  text-align: right;
+}
+.roz-fod-H{
+  width: 5.5%;
+  text-align: right;
+}
+.roz-fod-I{
+  width: 8%;
+  text-align: right;
+}
+.roz-fod-J{
+  width: 2%;
+  text-align: right;
+}
+.roz-col-JJ{
+  width: 2%;
+  text-align: right;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+.wyszczeg{
+  background-color: silver;
+}

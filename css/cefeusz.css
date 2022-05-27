@@ -1,0 +1,737 @@
+body {
+	min-height: 90rem;
+	padding-top: 4.5rem;
+}
+
+label {
+	margin-bottom: 0;
+	margin-top: 0.5rem;
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+@media print {
+	.tabFormularzZaliczka{
+		visibility: hidden;
+	}
+}
+
+#widokWezlow{
+	margin-top: 1rem;
+}
+
+.tabNumer {
+	text-align: right;
+	width: 3%;
+}
+.tabPowierznia {
+	text-align: right;
+	width: 5%;
+}
+.tabRight{
+	text-align: right;
+}
+.tabSelect:hover {
+	cursor: pointer;
+}
+
+.tabKodLok {
+	text-align: center;
+}
+.tabRodzLok, .tabRmi {
+	text-align: center;
+	width: 5%;
+}
+.tabLP {
+	padding: 2px 0px 2px 2px;
+	width: 10%;
+	text-align: right;
+}
+.tabText {
+	padding: 2px 2px 2px 10px;
+	width: 30%;
+}
+.tabBtn {
+	padding: 2px 2px 2px 2px;
+	width: 20%;
+}
+.tabPB {
+	padding: 2px 10px 2px 5px;
+	width: auto;
+}
+
+.tabNaglowek {
+	text-align: center;
+	background-color: dimgrey;
+	color: white;
+}
+
+.tabCenter {
+	text-align: center;
+}
+
+#widokBudynkow a:link,
+a:visited {
+	color: black;
+}
+.tabSymbBud {
+	text-align: left;
+	width: 40%;
+}
+.tabNazwaBudynku {
+	width: 22%;
+}
+.tabNazwaBud50 {
+	width: auto;
+}
+
+.tabIndexJR {
+	width: 5%;
+}
+
+.table-hover tbody tr:hover {
+	background-color: cadetblue;
+}
+
+.zaznaczone {
+	background-color: coral !important;
+}
+
+.table-sm {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.scroll {
+	color: #fff;
+	margin-top: 100px;
+}
+
+#toTopBtn {
+	position: fixed;
+	bottom: 26px;
+	right: 39px;
+	z-index: 98;
+	padding: 21px;
+	background-color: rgb(38, 0, 253, 0.8);
+}
+
+.js .cd-top--fade-out {
+	opacity: .5;
+}
+
+.js .cd-top--is-visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.js .cd-top {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s, background-color .3s;
+}
+
+.cd-top {
+	position: fixed;
+	bottom: 20px;
+	bottom: var(--cd-back-to-top-margin);
+	right: 20px;
+	right: var(--cd-back-to-top-margin);
+	display: inline-block;
+	height: 40px;
+	height: var(--cd-back-to-top-size);
+	width: 40px;
+	width: var(--cd-back-to-top-size);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+	background: url(../img/cd-top-arrow.svg) no-repeat center 50%;
+	background-color: rgb(38, 0, 253, 0.8);
+	background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
+}
+
+#mnuWyloguj {
+	padding: 5px 20px;
+}
+
+#lokalePomieszczenia, #uzytkownicy, #wezlycoicw, #budynkiJednostkiRozliczeniowe,
+#instalacjaGrzejnikowpodzielnikow, #odczytyPodzielnikow, #rozliczenie,
+#wprowadzanieZaliczek, #sezonGrzewczy, #pracownicy, #kopiaDanych, #miastaUlice,
+#grzejniki, #rodzaje, #wPomieszczeniach, #adresybudynkow, #spoldzielnia{
+	display: none;
+	position: absolute;
+	width: 90%;
+	padding: 1rem 1rem;
+}
+
+
+#listaSezonow{
+	margin-right: 2rem;
+	padding-right: 2rem;
+}
+
+#dataOdczytuLabel{
+	margin: 0 0.5rem;
+	/* padding: 0 0.5rem; */
+}
+
+
+.pagination {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.modal-header {
+	display: inline-block;
+}
+
+.modal-red {
+	background-color: red;
+}
+
+.modal-sukces {
+	background-color: #5cb85c;
+}
+
+.modal-info {
+	background-color: rgba(192, 192, 192, 1);
+}
+
+.modal-header #komunikatDobryLongTitle,
+.close {
+	background-color: #5cb85c;
+	color: white !important;
+	text-align: center;
+}
+
+.modal-header #modalBlad,
+.close {
+	background-color: red;
+	color: white !important;
+	text-align: center;
+}
+
+h6 {
+	margin: 0.5rem auto;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.modal-header #komunikatInfoLongTitle,
+h5,
+.close {
+	background-color: rgba(192, 192, 192, 1);
+	color: white !important;
+	text-align: center;
+}
+
+.modal-dialog {
+	margin: 20% auto;
+}
+
+.navbar-text {
+	padding: 5px 10px 5px 10px;
+}
+
+.nav-item {
+	margin: 0 10 0 10;
+}
+
+a {
+	text-decoration: none !important;
+}
+a:hover {
+	text-decoration-color: rosybrown;
+	text-decoration-line: none !important;
+}
+
+#KtoNazwa,
+#mnuWyloguj {
+	color: rosybrown;
+}
+.tytulOkna {
+	margin-top: 0px !important;
+	margin-left: -1rem !important;
+}
+
+#sticky-footer {
+	position: fixed;
+	z-index: 90px;
+	flex-shrink: none;
+	height: 11px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.btn-group {
+	margin-left: 15px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.btncenter{
+	margin: 0 auto;
+	display: block;
+}
+
+.badge-info {
+	padding: 0.31rem;
+}
+
+#budynekWWezle {
+	margin-bottom: 1rem;
+}
+
+.pam-inline {
+	margin-right: 1rem;
+}
+
+.pam-number {
+	margin: auto 1rem auto 0;
+	height: 2rem;
+	width: 5rem;
+}
+
+#filtrWezlow {
+	margin-bottom: 1rem;
+}
+
+#filtrlokali {
+	width: 20rem;
+}
+.pam-duzy-dialog {
+	margin-top: 5%;
+}
+
+.spinnerborder {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#spinnerWait {
+	display: none;
+	position: relative;
+	margin: 25% auto;
+}
+
+#widokLokali tbody tr:nth-of-type(4n + 1) {
+	background-color: white;
+}
+
+#widokLokali tbody tr:hover{
+	background-color:cadetblue;
+}
+
+.tabszczeg, #inputpodpis {
+	display: none;
+}
+
+.tabszczeg, .tabszczeg tr {
+	background-color: white !important;
+}
+
+.tabszczeg:hover, .tabszczeg tr:hover {
+	background-color: white !important;
+}
+
+div.wewTable {
+	background-color: #ffffff;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+.pamTable.wewTable .pamTableCell,
+.pamTable.wewTable .pamTableHead {
+	border: 0px solid #aaaaaa;
+	padding: 3px 2px;
+}
+.pamTable.wewTable .pamTableBody .pamTableCell {
+	font-size: 1rem;
+}
+.pamTable.wewTable {
+	background: #dee2e6;
+}
+.pamTable.wewTable .pamTableHeading {
+	background: #646464;
+}
+.pamTable.wewTable .pamTableHeading .pamTableHead {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.pamTable {
+	display: table;
+	width: 100%;
+	margin: 0.3rem 0.8rem;
+}
+.pamTableRow {
+	display: table-row;
+}
+.pamTableHeading {
+	display: table-header-group;
+}
+.pamTableRowHeading {
+	display: table-row;
+}
+.pamTableCell,
+.pamTableHead {
+	display: table-cell;
+	padding: 0 0.3rem;
+	position: relative;
+}
+.pamTableHeading {
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.pamTableBody {
+	display: block;
+}
+
+.pomieszczWLokalu {
+	position: relative;
+	display: block;
+	background-color: white;
+}
+.pogrubione {
+	font-weight: bold;
+}
+.pamTableCell button {
+	margin: 3px 3px;
+}
+
+.pamTableCell p {
+	vertical-align: top;
+}
+
+.pamTableCell.dwadododlu {
+	text-align: right;
+	vertical-align: top;
+}
+
+.dlugi {
+	display: inline-block;
+	padding: 0.3rem 2rem;
+	width: 20rem;
+}
+.dlugidiv {
+	display: flex;
+
+}
+.inputCyfry{
+	text-align: right;
+}
+.wartOdczytu{
+	width: 6rem;
+}
+.checkodczyt{
+	margin: auto;
+	padding-left: 3rem !important;
+}
+
+.leftmar {
+	margin-left: 0.5rem;
+}
+
+.bi-hourglass-split{
+	display: none;
+}
+.bi-hourglass-split::before{
+	color: coral !important;
+}
+.bi-lightbulb-fill::before{
+	color: darkgreen !important;
+}
+.btn-pomieszczenie {
+	width: 10rem;
+}
+.btn-pom4 {
+	width: 4.7rem;
+}
+.btn-grz {
+	width: 4.3rem;
+}
+.pam-leftmragin{
+	margin-left: 2rem;
+}
+.rozliczenieForm{
+	background-color:rgba(0,0,0,.05);
+	padding: 1rem 0 1rem 1rem;
+}
+.inputRozliczenie{
+	width: 8rem;
+	height: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.inputRozliczenieWaskie{
+	width: 6rem;
+	height: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.inputRozliczenieBardzoWaskie{
+	width: 3rem;
+	height: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.inputRozliczenieSred{
+	width: 4rem;
+	height: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.inputRozliczenieDuze{
+	width: 6rem;
+	height: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.rozliczeniePrzyciski{
+	padding-top: 0.5rem;
+
+}
+.rozwewNagTab{
+	background-color: darkseagreen !important;
+}
+
+.tabZalNaglowek {
+	text-align: Left;
+	background-color: dimgrey;
+	color: white;
+}
+.tabZalFood{
+	background-color: teal !important;
+	color: white;
+	text-align: right;
+	font-weight: bold;
+}
+#widokSumaZaliczek{
+	width: 6rem;
+}
+.tabZalInfo{
+	width: 3rem;
+}
+
+#rozliczenieselectarchiwalne{
+	height: 2rem;
+	width: 11.4rem;
+	margin: 0;
+	padding: 0;
+}
+
+#rodzajKosztowStalych{
+	height: 2rem;
+	width: 3rem;
+	margin: 0;
+	padding: 0;
+}
+
+.spanError {
+	color: crimson !important;
+}
+
+.edycjaPodGrupa{
+    margin: 0.7rem 0 0 0;
+	padding: 0.5rem 0 0 0.5rem;
+	height: 2rem;
+	width: 100%;
+	text-align: left;
+	font-size: large;
+}
+
+#komunikatInfo-dod{
+	color: mediumvioletred;
+	font-size: x-small;
+}
+
+.tabUzytkNazwa{
+	width: 20%;
+}
+.tabUzytkEmail{
+	width: auto;
+}
+.tabUzytkAdres{
+	width: 40%;
+}
+.tabUzytKodLok{
+	width: 15%;
+}
+
+#widokMiast, #widokUlic, #widokProducentowGrzejnikow,
+#widokRodzajuGrzejnika, #widokWspolczynnikKQ, #widokRodzajowLokali,
+#widokRodzajuPomieszczenia, #widokRodzajuPodzielnika {
+	margin: 1rem 1rem 5rem 0;
+}
+
+.tabNazwaRodzGCenter, .tabNazwaProdG, .tabRodzPodzSkala, .tabRodzPodzWHE {
+	text-align: center;
+}
+
+.tabNazwaWspKQ, .tabNazwaRodzG {
+	text-align: right;
+}
+
+.kolumnatytul{
+	margin-bottom: 1rem;
+	background-color: seashell;
+	font-weight: bold;
+
+}
+
+.smbuttoninline{
+	margin: 0 auto;
+	display: inline;
+}
+
+.kolumnatytulzai{
+	margin-bottom: 1rem;
+	background-color: darkslategray;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.formmaxrow {
+	flex: 1;
+}
+
+.colA {
+	margin-right: 1rem;
+}
+
+.colB {
+	margin-left: 1rem;
+}
+
+#widokZainstalGrzejnikow{
+	margin: 0%;
+	width: 100%;
+}
+.tabZamGrzeA{
+	width: 20%;
+}
+
+.tabZamGrzeB{
+	width: auto;
+}
+
+.tabZamGrzeC{
+	width: 10%;
+}
+
+.tabZamGrzeD{
+	width: 30%;
+}
+
+.opiskomunikatu{
+	margin: 1rem;
+	color: maroon;
+	font-size: smaller;
+	text-align: justify;
+}
+
+#widokDoProtokolow, #widokWynikowRozliczenia, #widokZaliczek,
+#widokWezlowCOiCW, #widokLokali, #widokBudynkow,
+#widokUzytkownikow, #widokZainstalGrzejnikow, #widokZainstalPodzielnik,
+#widokBudynkowWSezonie, #widokUlic, #widokMiast, #widokAdresBudynu {
+	margin-bottom: 5rem;
+}
+
+.rozliczenieSezon{
+	margin-left: 2rem;
+	font-weight: bold;
+}
+
+#spoldzielniawidok{
+	margin: 1rem 0 2rem 0;
+	padding: 0.3rem;
+	font-size: 1.1rem;
+    background-color: gainsboro;
+}
+
+#wystawcawidok{
+	margin: 1rem 0 2rem 0;
+	padding: 0.3rem;
+	font-size: 1.1rem;
+    background-color:khaki;
+}
+
+#podladpodpis{
+	margin: 2rem 0;
+	padding: 0.3rem;
+	font-size: 1.1rem;
+}
+
+#emaildialogtekst{
+	text-align: center;
+}
+
+.progress{
+	margin: 5px 5px;
+	height: 2rem;
+}
+
+#emailprogress {
+	margin: auto 5px auto 5px;
+	padding: 5px;
+	height: 1.6rem;
+	font-weight: bold;
+}
+
+#previewpodpis{
+	margin: 1rem 0;
+}
+
+#parametryemailwidok{
+	margin: 1rem 0 2rem 0;
+	padding: 0.3rem;
+	font-size: 1.1rem;
+    background-color: gainsboro;
+}
+
+#dataOdczytu{
+    width: 7.5rem;
+}
+
+#dataOdczytu::-webkit-calendar-picker-indicator{
+	margin: 0px 0px 0px 0px;
+	right:0;
+	padding: 0px 0px 0px 0px;
+}
+
+.kolorred{
+	color: red;
+}
+
+.listaWezlow {
+	margin-bottom: 4rem;
+}

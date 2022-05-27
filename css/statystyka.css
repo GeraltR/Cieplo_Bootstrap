@@ -1,0 +1,22 @@
+h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h5 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.lista {
+    margin: 2rem auto;
+    width: 60%;
+}
+
+.wiersze{
+    padding: 2rem;
+}
+
+.doprawej {
+    text-align: right;
+}

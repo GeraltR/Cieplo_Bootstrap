@@ -1,0 +1,202 @@
+body{
+    font-family: 'Segoe UI','Roboto','Helvetica Neue','Arial', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+@page {
+    margin: 0mm;
+    padding: 0mm;
+    font-family: 'Segoe UI','Roboto','Helvetica Neue','Arial', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+@media print {
+    .page {
+        size: 6in 4in landscape;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1cm;
+        page-break-after: always;
+    }
+
+    .page > .content {
+        position: relative;
+        height: 100%;
+        margin: 1cm 1cm 1.5cm 1cm;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .page > .content > .footer {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+.page {
+    margin-left: 1cm;
+}
+.mystrona{
+    margin: 0 2px 0 auto;
+    text-align: right;
+    min-height: 4rem;
+}
+.odstep{
+    min-height: 2rem;
+}
+
+.checkbox{
+    border: 1px solid black;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0.6rem 0.4rem auto 0.4rem;
+}
+.protOdczytOdstepPion2{
+    min-height: 2rem;
+}
+.protOdczytOdstepPion3{
+    min-height: 3rem;
+}
+.protOdczytOdstepPion5{
+    min-height: 5rem;
+}
+
+.protOdczytOdbiorcaNaglowek{
+    width: 25cm;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.protOdczytWystawca{
+    width: 25cm;
+    height: 3cm;
+}
+
+.jednProtokol {
+    width: 25cm;
+    height: 14cm;
+}
+
+.protOdczytOdbiorca{
+    width: 25cm;
+    height: 1.7cm;
+    font-weight: bold;
+}
+
+.protOdczytOdbiorca50L{
+    width: 50%;
+    font-size: 1.25rem;
+    border-left: 1px solid black;
+}
+.protOdczytOdbiorca50R{
+    width: 50%;
+    font-size: 1.25rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.protOdczytTytul{
+    width: 25cm;
+}
+
+.protOdczytPodzielniki{
+    width: 25cm;
+    /*height: 6cm; */
+}
+
+.protstopka{
+    width: 25cm;
+    height: 1.5cm;
+}
+
+.odsepWPoziom5{
+    border: 0px;
+    width: 5rem;
+    display: inline-block;
+}
+
+.protOdczytOdstepPion2{
+    border: 0px;
+    height: 2rem;
+}
+
+.protOdczytOdstepPion5{
+    border: 0px;
+    height: 10rem;
+}
+
+.protOdczytOdstepPion8{
+    border: 0px;
+    height: 16rem;
+
+}
+.protOdczytOdstepPion10{
+    border: 0px;
+    height: 20rem;
+}
+
+.protImieNazwL{
+    width: 50%;
+    height: 0.8cm;
+    padding-left: 1rem;
+    border-left: 1px solid black;
+}
+.protImieNazwR{
+    width: 50%;
+    height: 0.8cm;
+    padding-left: 1rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.protStopka6{
+    width: 8cm;
+}
+.protStopka3{
+    width: 6cm;
+}
+.protStopka2{
+    width: 3cm;
+}
+
+.tableOdczyty, table, th, td{
+    font-weight: normal;
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+.tableOdczytyLP, th, td{
+    width: 1.5cm;
+}
+.tableOdczytyLP td{
+    text-align: right;
+}
+.tableOdczytyPom ,th, td{
+    width: 1.5cm;
+}
+.tableOdczytyPom td{
+    text-align: center;
+}
+.tableOdczytyNrFabryczny, th, td{
+    width: 4cm;
+}
+.tableOdczytyNrFabryczny td{
+    text-align: center;
+}
+.tableOdczytyOdczyt, th, td{
+    width: 3.5cm;
+}
+
+.tableOdczytyLastOdczyt, th, td{
+    width: 3cm;
+}
+
+.tableOdczytyLastOdczyt td{
+    text-align: right;
+
+}
+.tableOdczytyUwagi, th, td{
+    width: auto;
+}

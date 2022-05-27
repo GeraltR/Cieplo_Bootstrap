@@ -1,0 +1,83 @@
+.modal-red {
+	background-color: red;
+}
+.modal-header #modalBlad,
+.close {
+	background-color: red;
+	color: white !important;
+	text-align: center;
+}
+h3{
+    position: relative;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+h5 {
+    margin-left: 2rem;
+    font-weight: bold;
+}
+.wyrownaniedoprawej {
+    margin: auto 0 auto auto;
+    padding-right: 0.3rem;
+    text-align: right;
+}
+.wyrownaniedolewejnazero td {
+    margin: auto auto auto 0;
+    padding-left: 0;
+}
+
+.spinnerborder {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#spinnerWait {
+	display: none;
+	position: relative;
+	margin: 25% auto;
+}
+
+
+.OdstepPion1{
+	min-height: 1rem;
+}
+.OdstepPion2{
+    min-height: 2rem;
+}
+.OdstepPion3{
+    min-height: 3rem;
+}
+
+.rozliczNaglowek{
+	width: 70rem;
+	margin: 0 2rem;
+}
+
+.wystawcaKolA {
+    text-align: left;
+    width: 35%;
+}
+.wystawcaKolB {
+    text-align: left;
+    width: 10%;
+}
+.wystawcaKolC {
+    text-align: left;
+    width: auto;
+}
+.wystawcaKolD {
+    text-align: right;
+    width: 30%;
+}
+.wystawcaKole {
+    text-align: left;
+    width: 20%;
+}

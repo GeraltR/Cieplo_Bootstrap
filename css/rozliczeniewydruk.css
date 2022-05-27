@@ -1,0 +1,225 @@
+.edycjaPodGrupa{
+    margin: 0.7rem 0 0 0;
+	padding: 0.5rem 0 0 0.5rem;
+	height: 2rem;
+	width: 100%;
+	text-align: left;
+	font-size: large;
+}
+
+.modal-header {
+	display: inline-block;
+}
+
+.modal-info {
+	background-color: rgba(192, 192, 192, 1);
+}
+
+.modal-header #komunikatInfoLongTitle,
+.modal-title,
+.close {
+	background-color: rgba(192, 192, 192, 1);
+	color: white !important;
+	text-align: center;
+}
+
+#pominlokatorowzemail {
+    margin-top: 1rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+.stronyz {
+    right: 2rem;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+table, tr, td, tfoot {
+    border-top:  0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+th {
+    text-align: center;
+}
+
+.tabNagDoLewej {
+    text-align: left;
+}
+
+
+.tabelaprostaNag {
+    border-top:  0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    font-size: 1.1rem;
+
+}
+
+.tabelaprosta tr{
+    height: 2rem;
+}
+
+.rozliczKolA {
+    text-align: left;
+    font-weight: bold;
+    width: auto;
+}
+.rozliczKolB {
+    text-align: center;
+    width: 16%;
+}
+
+.rozliczKolC {
+    text-align: right;
+    width: 8%;
+    padding-right: 0.5rem;
+}
+
+.rozliczKolD {
+    text-align: center;
+    width: 18%;
+}
+
+.rozliczKolE {
+    text-align: right;
+    width: 10%;
+
+}
+
+.rozliczKolF {
+    text-align: right;
+    width: 8%;
+
+}
+
+.zmianapodz {
+    color: white;
+    background-color: black;
+}
+
+.tf {
+    height: 4rem;
+    padding: 1rem 0 0 0;
+    text-align: right;
+    font-weight: bold;
+}
+
+h5{
+    padding-top: 1rem;
+}
+
+.tabzestawkosztow{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+.zestawKolAA{
+    width: auto;
+}
+.zestawKolBB{
+    text-align: left;
+}
+.zestawKolAB{
+    width: 15%;
+}
+.zestawKolAC{
+    width: auto;
+    text-align: right;
+}
+.zestawR{
+    text-align: right;
+}
+.jedn{
+    width: 3%;
+}
+.tabzestawkosztowSzcz{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+}
+.zestszA{
+    width: 20%;
+    text-align: right;
+}
+
+.zestszB{
+    width: 30%;
+    text-align: center;
+}
+
+.zestszC{
+    width: 15%;
+    text-align: center;
+}
+.zestszD{
+    width: 15%;
+    text-align: center;
+}
+.zestszE{
+    width: 8%;
+    text-align: center;
+}
+.zestszF{
+    width: 15%;
+    text-align: center;
+}
+.znak{
+    width: auto;
+    text-align: center;
+}
+.znak2{
+    width: 4%;
+    text-align: center;
+}
+.zestnag{
+    text-align: left;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+.tpodsuma{
+    margin: 2rem 10rem auto auto;
+}
+.podsuma{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.ramkaL{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 0;
+}
+.ramkaR{
+    border-left: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.opisdodtkowy{
+    margin: 0 2rem;
+}
+@media screen {
+    #previewpodpis{
+        display: none;
+    }
+}
+
+@miedia print {
+    #previewpodpis{
+        display: block;
+    }
+}
+
+#previewpodpis{
+	margin: 0 2rem 5rem auto;
+	float: right;
+}

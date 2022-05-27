@@ -1,0 +1,69 @@
+@page {
+	size: A4;
+}
+
+
+h3, h4 {
+    margin: 0 auto 0 auto;
+    padding: 0 auto 0 auto;
+}
+table {
+    width: 90%;
+    margin-left: 2rem;
+    font-weight: normal;
+}
+.rowgora{
+    border-top: 1px solid black;
+}
+.rowsrodek{
+
+}
+.rowdol{
+   border-bottom: 1px solid black;
+}
+.rozcolA{
+   border-left: 1px solid black;
+   padding-left: 1rem;
+   width: 2%;
+}
+.rozcolB{
+  width: 40%;
+}
+.rozcoldwA{
+   border-left: 1px solid black;
+   padding-left: 1rem;
+   width: 60%;
+}
+.rozcolC{
+  width: 20%;
+  text-align: right;
+}
+.rozcolD{
+  border-right: 1px solid black;
+  padding-right: 0.5rem;
+  width: 30%;
+  text-align: right;
+}
+.rozcolE{
+    width: 12%;
+    text-align: right;
+  }
+.rozcolP{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding-left: 0.5rem;
+  width: 80%;
+}
+.grub{
+    font-weight: bold;
+}
+
+.bezcolPiec{
+  width: 60%;
+}
+.bezcola{
+  width: 10%;
+}
+.bezcolC{
+  width: 18%;
+}
