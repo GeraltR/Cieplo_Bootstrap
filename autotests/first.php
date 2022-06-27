@@ -1,312 +1,170 @@
 <?php
 
 class CalculatorTest extends \PHPUnit\Framework\TestCase {
-   public function testAdd () {
+    public function testAdd () {
 
-       $calculator = new Calculator;
-       $result = $calculator->add(20,5);
+        $calculator = new Calculator;
+        $result = $calculator->add(20,5);
 
-       $this->assertEquals(25, $result);
-   }
+        $this->assertEquals(25, $result);
+    }
 
-   public function testSubtract () {
-       $calculator = new Rozliczenie;
+    /**
+     * @dataProvider OdczytyWartosci
+     */
+    public function testDajOczytyDlaLokalu ($idlokalu, $mnoznik, $powinnobyc) {
+        $odczyty = new Rozliczenie;
 
-       $result = $calculator->subtract(20,5);
+        $odczyty->dataPocz = '2019-12-01';
+        $odczyty->dataKon = '2020-11-30';
+        $result = $odczyty->DajOczytyDlaLokalu($idlokalu, $mnoznik);
+        $this->assertEquals($powinnobyc, $result);
+    }
 
-       $this->assertEquals(15, $result);
-   }
-
-   public function testDajOczytyDlaLokalu () {
-       $odczyty = new Rozliczenie;
-
-       $odczyty->dataPocz = '2019-12-01';
-       $odczyty->dataKon = '2020-11-30';
-       $result = $odczyty->DajOczytyDlaLokalu(5499, 1);
-       $this->assertEquals(129, $result);
-       $result = $odczyty->DajOczytyDlaLokalu(4297, 1);
-        $this->assertEquals(784.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4298, 1);
-        $this->assertEquals(777.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4299, 1);
-        $this->assertEquals(61.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4300, 1);
-        $this->assertEquals(3304.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4301, 1);
-        $this->assertEquals(54.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4302, 1);
-        $this->assertEquals(7982.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4303, 1);
-        $this->assertEquals(2756.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4304, 1);
-        $this->assertEquals(667.32, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4305, 1);
-        $this->assertEquals(3463.66, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4306, 1);
-        $this->assertEquals(3307.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4307, 1);
-        $this->assertEquals(754.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4308, 1);
-        $this->assertEquals(2059.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4309, 1);
-        $this->assertEquals(2343.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4310, 1);
-        $this->assertEquals(2544.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4311, 1);
-        $this->assertEquals(767.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4312, 1);
-        $this->assertEquals(505.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4313, 1);
-        $this->assertEquals(3319.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4314, 1);
-        $this->assertEquals(267.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4315, 1);
-        $this->assertEquals(1615.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4316, 1);
-        $this->assertEquals(595.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4317, 1);
-        $this->assertEquals(694.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4318, 1);
-        $this->assertEquals(791.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4319, 1);
-        $this->assertEquals(1200.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4320, 1);
-        $this->assertEquals(2971.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4321, 1);
-        $this->assertEquals(1577.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4322, 1);
-        $this->assertEquals(688.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4323, 1);
-        $this->assertEquals(493.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4324, 1);
-        $this->assertEquals(1625.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4325, 1);
-        $this->assertEquals(1954.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4327, 1);
-        $this->assertEquals(1215.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4328, 1);
-        $this->assertEquals(1869.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4329, 1);
-        $this->assertEquals(2277.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4330, 1);
-        $this->assertEquals(104.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4331, 1);
-        $this->assertEquals(2064.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4332, 1);
-        $this->assertEquals(1720.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4333, 1);
-        $this->assertEquals(55.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4334, 1);
-        $this->assertEquals(40.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4335, 1);
-        $this->assertEquals(3294.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4336, 1);
-        $this->assertEquals(1767.66, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4337, 1);
-        $this->assertEquals(9.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4338, 1);
-        $this->assertEquals(2618.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4340, 1);
-        $this->assertEquals(999.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4341, 1);
-        $this->assertEquals(3236.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4342, 1);
-        $this->assertEquals(1879.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4343, 1);
-        $this->assertEquals(278.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4344, 1);
-        $this->assertEquals(2475.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4345, 1);
-        $this->assertEquals(1072.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4346, 1);
-        $this->assertEquals(2760.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4347, 1);
-        $this->assertEquals(1294.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4348, 1);
-        $this->assertEquals(1457.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4349, 1);
-        $this->assertEquals(25.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4350, 1);
-        $this->assertEquals(96.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4351, 1);
-        $this->assertEquals(932.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4352, 1);
-        $this->assertEquals(366.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4353, 1);
-        $this->assertEquals(3210.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4354, 1);
-        $this->assertEquals(748.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4355, 1);
-        $this->assertEquals(749.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4356, 1);
-        $this->assertEquals(2152.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4357, 1);
-        $this->assertEquals(2032.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4358, 1);
-        $this->assertEquals(1481.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4359, 1);
-        $this->assertEquals(182.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4360, 1);
-        $this->assertEquals(5635.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4361, 1);
-        $this->assertEquals(696.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4362, 1);
-        $this->assertEquals(2002.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4363, 1);
-        $this->assertEquals(324.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4364, 1);
-        $this->assertEquals(3291.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4365, 1);
-        $this->assertEquals(706.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4366, 1);
-        $this->assertEquals(2040.65, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4368, 1);
-        $this->assertEquals(1653.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4369, 1);
-        $this->assertEquals(3622.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4370, 1);
-        $this->assertEquals(2144.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4371, 1);
-        $this->assertEquals(1419.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4372, 1);
-        $this->assertEquals(2882.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4374, 1);
-        $this->assertEquals(1028.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4375, 1);
-        $this->assertEquals(1569.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4376, 1);
-        $this->assertEquals(1487.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4377, 1);
-        $this->assertEquals(3897.66, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4378, 1);
-        $this->assertEquals(2090.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4379, 1);
-        $this->assertEquals(3114.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4380, 1);
-        $this->assertEquals(1581.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4381, 1);
-        $this->assertEquals(3961.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4382, 1);
-        $this->assertEquals(407.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4383, 1);
-        $this->assertEquals(696.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4384, 1);
-        $this->assertEquals(1202.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4385, 1);
-        $this->assertEquals(1608.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4386, 1);
-        $this->assertEquals(3442.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4387, 1);
-        $this->assertEquals(531.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4388, 1);
-        $this->assertEquals(879.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4389, 1);
-        $this->assertEquals(2259.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4390, 1);
-        $this->assertEquals(1807.99, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4391, 1);
-        $this->assertEquals(880.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4392, 1);
-        $this->assertEquals(1776.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4393, 1);
-        $this->assertEquals(482.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4394, 1);
-        $this->assertEquals(2661.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4395, 1);
-        $this->assertEquals(1797.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4396, 1);
-        $this->assertEquals(635.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4397, 1);
-        $this->assertEquals(659.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4398, 1);
-        $this->assertEquals(808.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4399, 1);
-        $this->assertEquals(2184.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4400, 1);
-        $this->assertEquals(4266.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4401, 1);
-        $this->assertEquals(2052.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4402, 1);
-        $this->assertEquals(726.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4404, 1);
-        $this->assertEquals(2086.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4405, 1);
-        $this->assertEquals(756.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4406, 1);
-        $this->assertEquals(470.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4407, 1);
-        $this->assertEquals(374.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4408, 1);
-        $this->assertEquals(285.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4409, 1);
-        $this->assertEquals(770.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4410, 1);
-        $this->assertEquals(2604.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4411, 1);
-        $this->assertEquals(1518.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4412, 1);
-        $this->assertEquals(901.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4413, 1);
-        $this->assertEquals(257.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4414, 1);
-        $this->assertEquals(161.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4415, 1);
-        $this->assertEquals(610.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4416, 1);
-        $this->assertEquals(1607.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4417, 1);
-        $this->assertEquals(1789.99, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4418, 1);
-        $this->assertEquals(961.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4419, 1);
-        $this->assertEquals(1492.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4420, 1);
-        $this->assertEquals(1164.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4422, 1);
-        $this->assertEquals(3254.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4423, 1);
-        $this->assertEquals(12.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4424, 1);
-        $this->assertEquals(3178.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4426, 1);
-        $this->assertEquals(862.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4427, 1);
-        $this->assertEquals(2476.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4428, 1);
-        $this->assertEquals(1311.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4429, 1);
-        $this->assertEquals(1973.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4430, 1);
-        $this->assertEquals(2577.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4431, 1);
-        $this->assertEquals(49.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4432, 1);
-        $this->assertEquals(1.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4433, 1);
-        $this->assertEquals(1095.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4434, 1);
-        $this->assertEquals(1717.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4435, 1);
-        $this->assertEquals(5375.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4436, 1);
-        $this->assertEquals(1505.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4437, 1);
-        $this->assertEquals(1249.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4438, 1);
-        $this->assertEquals(3099.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4439, 1);
-        $this->assertEquals(5017.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(4440, 1);
-        $this->assertEquals(1129.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(12988, 1);
-        $this->assertEquals(1745.00, $result);
-        $result = $odczyty->DajOczytyDlaLokalu(13063, 1);
-        $this->assertEquals(1081.00, $result);
-
-
-
-   }
-
-
+    public function OdczytyWartosci(): array
+    {
+        return [
+                [5499, 1, 129, 1],
+                [4297, 1, 784.00],
+                [4298, 1, 777.00],
+                [4299, 1, 61.00],
+                [4300, 1, 3304.00],
+                [4301, 1, 54.00],
+                [4302, 1, 7982.00],
+                [4303, 1, 2756.00],
+                [4304, 1, 667.32],
+                [4305, 1, 3463.66],
+                [4306, 1, 3307.00],
+                [4307, 1, 754.00],
+                [4308, 1, 2059.00],
+                [4309, 1, 2343.00],
+                [4310, 1, 2544.00],
+                [4311, 1, 767.00],
+                [4312, 1, 505.00],
+                [4313, 1, 3319.00],
+                [4314, 1, 267.00],
+                [4315, 1, 1615.00],
+                [4316, 1, 595.00],
+                [4317, 1, 694.00],
+                [4318, 1, 791.00],
+                [4319, 1, 1200.00],
+                [4320, 1, 2971.00],
+                [4321, 1, 1577.00],
+                [4322, 1, 688.00],
+                [4323, 1, 493.00],
+                [4324, 1, 1625.00],
+                [4325, 1, 1954.00],
+                [4327, 1, 1215.00],
+                [4328, 1, 1869.00],
+                [4329, 1, 2277.00],
+                [4330, 1, 104.00],
+                [4331, 1, 2064.00],
+                [4332, 1, 1720.00],
+                [4333, 1, 55.00],
+                [4334, 1, 40.00],
+                [4335, 1, 3294.00],
+                [4336, 1, 1767.66],
+                [4337, 1, 9.00],
+                [4338, 1, 2618.00],
+                [4340, 1, 999.00],
+                [4341, 1, 3236.00],
+                [4342, 1, 1879.00],
+                [4343, 1, 278.00],
+                [4344, 1, 2475.00],
+                [4345, 1, 1072.00],
+                [4346, 1, 2760.00],
+                [4347, 1, 1294.00],
+                [4348, 1, 1457.00],
+                [4349, 1, 25.00],
+                [4350, 1, 96.00],
+                [4351, 1, 932.00],
+                [4352, 1, 366.00],
+                [4353, 1, 3210.00],
+                [4354, 1, 748.00],
+                [4355, 1, 749.00],
+                [4356, 1, 2152.00],
+                [4357, 1, 2032.00],
+                [4358, 1, 1481.00],
+                [4359, 1, 182.00],
+                [4360, 1, 5635.00],
+                [4361, 1, 696.00],
+                [4362, 1, 2002.00],
+                [4363, 1, 324.00],
+                [4364, 1, 3291.00],
+                [4365, 1, 706.00],
+                [4366, 1, 2040.65],
+                [4368, 1, 1653.00],
+                [4369, 1, 3622.00],
+                [4370, 1, 2144.00],
+                [4371, 1, 1419.00],
+                [4372, 1, 2882.00],
+                [4374, 1, 1028.00],
+                [4375, 1, 1569.00],
+                [4376, 1, 1487.00],
+                [4377, 1, 3897.66],
+                [4378, 1, 2090.00],
+                [4379, 1, 3114.00],
+                [4380, 1, 1581.00],
+                [4381, 1, 3961.00],
+                [4382, 1, 407.00],
+                [4383, 1, 696.00],
+                [4384, 1, 1202.00],
+                [4385, 1, 1608.00],
+                [4386, 1, 3442.00],
+                [4387, 1, 531.00],
+                [4388, 1, 879.00],
+                [4389, 1, 2259.00],
+                [4390, 1, 1807.99],
+                [4391, 1, 880.00],
+                [4392, 1, 1776.00],
+                [4393, 1, 482.00],
+                [4394, 1, 2661.00],
+                [4395, 1, 1797.00],
+                [4396, 1, 635.00],
+                [4397, 1, 659.00],
+                [4398, 1, 808.00],
+                [4399, 1, 2184.00],
+                [4400, 1, 4266.00],
+                [4401, 1, 2052.00],
+                [4402, 1, 726.00],
+                [4404, 1, 2086.00],
+                [4405, 1, 756.00],
+                [4406, 1, 470.00],
+                [4407, 1, 374.00],
+                [4408, 1, 285.00],
+                [4409, 1, 770.00],
+                [4410, 1, 2604.00],
+                [4411, 1, 1518.00],
+                [4412, 1, 901.00],
+                [4413, 1, 257.00],
+                [4414, 1, 161.00],
+                [4415, 1, 610.00],
+                [4416, 1, 1607.00],
+                [4417, 1, 1789.99],
+                [4418, 1, 961.00],
+                [4419, 1, 1492.00],
+                [4420, 1, 1164.00],
+                [4422, 1, 3254.00],
+                [4423, 1, 12.00],
+                [4424, 1, 3178.00],
+                [4426, 1, 862.00],
+                [4427, 1, 2476.00],
+                [4428, 1, 1311.00],
+                [4429, 1, 1973.00],
+                [4430, 1, 2577.00],
+                [4431, 1, 49.00],
+                [4432, 1, 1.00],
+                [4433, 1, 1095.00],
+                [4434, 1, 1717.00],
+                [4435, 1, 5375.00],
+                [4436, 1, 1505.00],
+                [4437, 1, 1249.00],
+                [4438, 1, 3099.00],
+                [4439, 1, 5017.00],
+                [4440, 1, 1129.00],
+                [12988, 1, 1745.00],
+                [13063, 1, 1081.00]
+            ];
+    }
 }
 ?>
